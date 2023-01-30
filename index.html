@@ -29,12 +29,14 @@
 </head>
 
 <body>
-  <header class="bg-red-500 p-4 mb-10">
+  <header class="bg-red-500 p-4 mb-5">
     <div class="max-w-5xl m-auto">
       <div class="flex justify-between align-middle">
-        <div class="text-white font-bold text-2xl flex align-middle">QR Code Generator</div>
+        <div class="text-white font-bold text-xl flex align-middle">
+          QR Code Generator
+        </div>
         <div class="text-sm inline-flex">
-          <p>social</p>
+          <img width="30" src="assets/github-icon.svg" alt="github icon">
           <p>social</p>
           <p>social</p>
         </div>
@@ -43,11 +45,11 @@
   </header>
 
   <main>
-    <div class="flex flex-col-reverse p-10 align-center justify-center m-auto md:max-w-4xl md:flex-row">
+    <div class="flex flex-col p-5 align-center justify-center m-auto md:max-w-4xl md:flex-row">
       <!-- Title/Description/Form Section -->
       <div class="w-full md:w-2/3 mr-24">
         <h1 class="text-3xl font-bold mb-5 md:text-4xl flex justify-center md:justify-start">QR Code Generator</h1>
-        <p>
+        <p class="px-1">
           Enter a URL and pick a size for the QR Code.
         </p>
         <form id="generate-form" class="mt-4" novalidate>
@@ -65,7 +67,7 @@
             <option value="800">800x800</option>
             <option value="900">900x900</option>
           </select>
-          <button class="bg-gray-600 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">Generate QR
+          <button class="bg-red-500 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">Generate QR
             Code</button>
         </form>
       </div>
